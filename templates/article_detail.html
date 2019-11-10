@@ -5,7 +5,7 @@
 	<p>by {{ object.author }} | {{ object.date }}</p>
 	<p>{{ object.body }}</p>
 	</div>
-
+	
 	{% if article.author.username != request.user.username %}	
 			{% else %}
 	<p><a href="{% url 'article_update' article.pk %}">Edit</a> |
